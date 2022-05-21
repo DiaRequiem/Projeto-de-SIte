@@ -140,6 +140,7 @@ nav  {
 }
 
 .tabela-filme {
+    display: block;
     width: 450px;
     margin: 0 auto;
     padding: 30px 40px;
