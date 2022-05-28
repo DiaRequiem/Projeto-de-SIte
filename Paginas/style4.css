@@ -170,11 +170,6 @@ table td {
 }
 
 @media screen and (max-width: 1200px) {
-    .menu a li {
-        display: block;
-        text-align: center;
-    }
-
     .tabela-filme {
         width: 80%;
         margin: 20 auto;
@@ -283,6 +278,13 @@ table td {
         font-size: 20px;
     }
 
+}
+
+@media screen and (max-width: 450px) {
+    .menu a li {
+        display: block;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 320px) {
     .tabela-filme table th {

@@ -259,13 +259,6 @@ nav {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .menu a li {
-        display: block;
-        text-align: center;
-    }
-}
-
 @media screen and (max-width: 1150px) {
     .cabecalho-letreiro {
         font-size: 28px;
@@ -400,6 +393,11 @@ nav {
 
     .filme-resumo p {
         font-size: 25px
+    }
+
+    .menu a li {
+        display: block;
+        text-align: center;
     }
 }
 
