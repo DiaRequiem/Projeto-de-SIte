@@ -78,7 +78,7 @@ nav {
     text-align: center;
     background-color: #f1c40f;
     border-radius: 20px;
-    font-family: 'Oleo Script','Arial', Helvetica, sans-serif;
+    font-family: 'Oleo Script', 'Arial', Helvetica, sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -393,5 +393,20 @@ nav {
 
     .filme-resumo p {
         font-size: 25px
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu a li {
+        display: block;
+        text-align: center;
+    }
+
+    .filme-capa-imagem img {
+        width: 100%;
+    }
+
+    .filme-resumo p {
+        font-size: 22px;
     }
 }
