@@ -204,7 +204,7 @@ nav {
     padding: 30px;
     font-size: 35px;
     border-radius: 12px;
-    font-family: 'Asap', cursive;
+    font-family: 'Asap', cursive, Arial, Helvetica, sans-serif;
     box-shadow: 0px 0px 3px 4px black;
 }
 
@@ -360,5 +360,38 @@ nav {
 
     .cabecalho-logo {
         width: 140px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .filme-capa-imagem img {
+        width: 360px;
+    }
+
+    .conteudo {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cabecalho-letreiro {
+        font-size: 15px;
+    }
+
+    .letras {
+        font-size: 20px;
+        width: calc(100% - 30px);
+    }
+
+    .filme-capa-imagem img {
+        width: 250px;
+    }
+
+    .filme-resumo h2 {
+        font-size: 30px;
+    }
+
+    .filme-resumo p {
+        font-size: 25px
     }
 }
