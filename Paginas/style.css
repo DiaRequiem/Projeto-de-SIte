@@ -409,4 +409,9 @@ nav {
     .filme-resumo p {
         font-size: 22px;
     }
+
+    .tabela-filme td {
+        font-size: 20px;
+        width: 50%;
+    }
 }

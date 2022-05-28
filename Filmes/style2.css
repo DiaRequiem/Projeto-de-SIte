@@ -128,7 +128,7 @@ nav  {
     margin-bottom: 5px;
     height: 5%;
     font-size: 55px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', Arial, cursive;
 }
 
 .filme-titulo {
@@ -148,7 +148,7 @@ nav  {
     padding: 30px;
     font-size: 35px;
     border-radius: 12px;
-    font-family: 'Asap', cursive;
+    font-family: 'Asap', 'Arial', cursive;
     box-shadow: 0px 0px 3px 4px black;
 }
 
@@ -177,11 +177,11 @@ tr:hover {
 .especial {
     color: red;
     font-weight: bold;
-    font-family: 'Odibee Sans', cursive;
+    font-family: 'Odibee Sans', 'Arial', cursive;
 }
 
 .tristeza {
-    font-family: 'Odibee Sans', cursive;
+    font-family: 'Odibee Sans', 'Arial', cursive;
 }
 
 .rodape {
@@ -199,7 +199,7 @@ tr:hover {
 
 .rodape p {
     padding: 5px;
-    font-family: 'Zen Loop', cursive;
+    font-family: 'Zen Loop', 'Arial', cursive;
 }
 
 .rodape div {
@@ -352,5 +352,33 @@ tr:hover {
     .rodape-logo {
         width: 150px;
         height: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu a li {
+        display: block;
+        text-align: center;
+    }
+
+    .filme-capa-imagem img {
+        width: 100%;
+    }
+
+    .filme-resumo p {
+        font-size: 22px;
+    }
+
+    .tabela-filme {
+        width: 335px;
+        margin: 20px;
+    }
+
+    .tabela-filme, th, td {
+        font-size: 25px;
+    }
+
+    .rodape p {
+        font-size: 25px;
     }
 }

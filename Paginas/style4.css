@@ -157,3 +157,158 @@ table td {
     align-items: center;
     font-size: 30px;
 }
+
+@media screen and (max-width:1600px) {
+    .cabecalho-logo {
+        position: initial;
+        transform: none;
+    }
+
+    .cabecalho-box {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu a li {
+        display: block;
+        text-align: center;
+    }
+
+    .tabela-filme {
+        width: 80%;
+        margin: 20 auto;
+    }
+
+    .tristeza {
+        width: 200px;
+    }
+
+    .especial {
+        width: 500px;
+    }
+
+    .tabela-filme table th {
+        font-size: 30px;
+    }
+
+    .tabela-filme table td {
+        font-size: 25px;
+    }
+
+    .rodape p {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .cabecalho-logo {
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .cabecalho-box {
+        width: 100%;
+    }
+
+    .cabecalho-letreiro {
+        position: initial;
+        transform: none;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    nav {
+        padding-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .cabecalho-letreiro {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cabecalho-logo {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .tabela-filme table th {
+        font-size: 20px;
+    }
+
+    .tabela-filme table td {
+        font-size: 17px;
+    }
+
+
+    .rodape p {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .cabecalho-letreiro {
+        width: 80%;
+    }
+
+    .tabela-filme {
+        width: 80%;
+    }
+
+    .rodape p {
+        font-size: 20px;
+    }
+
+    .rodape-logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu a li {
+        display: block;
+        text-align: center;
+    }
+
+    .tristeza {
+        width: 100px;
+    }
+
+    .tabela-filme table th {
+        font-size: 20px;
+    }
+
+    .tabela-filme table td {
+        font-size: 13px;
+    }
+
+
+    .rodape p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .tabela-filme table th {
+        font-size: 13px;
+    }
+
+    .tabela-filme table td {
+        font-size: 10px;
+    }
+
+    .rodape p {
+        font-size: 15px;
+    }
+
+}
