@@ -260,21 +260,6 @@ table td {
         width: 80%;
     }
 
-    .tabela-filme {
-        width: 80%;
-    }
-
-    .rodape p {
-        font-size: 20px;
-    }
-
-    .rodape-logo {
-        width: 150px;
-        height: 150px;
-    }
-}
-
-@media screen and (max-width: 420px) {
     .menu a li {
         display: block;
         text-align: center;
@@ -296,8 +281,8 @@ table td {
     .rodape p {
         font-size: 25px;
     }
-}
 
+}
 @media screen and (max-width: 320px) {
     .tabela-filme table th {
         font-size: 13px;
