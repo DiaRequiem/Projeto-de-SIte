@@ -7,14 +7,19 @@
 * {
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    /* Box-Sizing é pra respeitar a largura do monitor 👍 */
 }
+
+/* html {
+    scroll-behavior: smooth;
+} */
 
 body {
     /* padding-left: ;
     padding-right: ;
     padding-top: ; */
-    background: linear-gradient(30.15deg,   rgb(87, 86, 86) 26.62%, #f1c40f 75.61%);
+    background: linear-gradient(30.15deg, rgb(87, 86, 86) 26.62%, #f1c40f 75.61%);
     transition: 1s;
     /* O transition serve pra caso aja alguma mudança nos valores do body, ele da uma "duração" a mudança de valor, pra dar um efeito mais leve */
 
@@ -33,7 +38,7 @@ body {
     border-radius: 10px;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: white;
     font-size: 30px;
@@ -52,45 +57,57 @@ nav {
 
 .cabecalho {
     display: flex;
+    position: relative;
     justify-content: center;
     background-color: #111;
-    padding-top: 40px;
+    height: 200px;
 }
 
 .cabecalho-logo {
-    height: 200px;
     width: 200px;
-    padding-right: 1350px;
-    padding-bottom: 10px;
+    position: absolute;
+    /* Position absolute pra fazer outros elementos dentro da div ignorarem a colisão com a imagem */
+    left: 50px;
+    top: 60%;
+    transform: translateY(-50%);
+    /* Movimenta algo usando o sistema cartesiano refente ao eixo X e Y dentro da div */
 }
 
-.cabecalho h1 {
+.cabecalho-letreiro {
     padding: 10px;
-    margin: 60px;
     text-align: center;
-    position: absolute;
     background-color: #f1c40f;
     border-radius: 20px;
     font-family: 'Oleo Script', cursive;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
-nav  {
+.cabecalho-box {
+    position: relative;
+    width: 1000px;
+}
+
+nav {
     justify-content: center;
     display: flex;
 }
 
 .letras {
-     background-color: rgba(241, 196, 15, 1.0);
-     border-radius: 50px;
-     width: 500px;
-     height: 70px;
-     font-size: 28px;
-     text-align: center;
-     margin-top: 20px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     box-shadow: 0px 0px 25px black;
+    background-color: rgba(241, 196, 15, 1.0);
+    border-radius: 50px;
+    width: 500px;
+    height: 70px;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 25px black;
 }
 
 .letras {
@@ -106,11 +123,13 @@ nav  {
     grid-template-columns: 35% 50%;
     margin-top: 3%;
     margin-bottom: 7%;
+    transition: 0.5s;
 }
 
 .filme-capa {
     display: grid;
     aspect-ratio: 1/1;
+    /* Aspect Ratio é a proporção do quadrado, 1/1 seria um quadrado e a imagem não fica distorcida */
     place-items: center;
     width: 100%;
 }
@@ -119,19 +138,21 @@ nav  {
     display: block;
     object-fit: cover;
     width: 100%;
-    width: 350px;
+    width: 370px;
     border-radius: 8px;
     opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .filme-capa-strong-orange {
     box-shadow: 10px 10px 8px rgba(253, 137, 5, 0.884);
 }
+
 .filme-capa-orange {
     box-shadow: 10px 10px 8px rgba(253, 174, 5, 0.884);
 }
+
 .filme-capa-yellow {
     box-shadow: 10px 10px 8px rgba(241, 196, 15, 1.0);
 }
@@ -207,4 +228,137 @@ nav  {
 .rodape div {
     align-items: center;
     font-size: 30px;
+}
+
+/* SEÇÃO RESPONSIVA DO SITE */
+
+/* Serve pra setar uma média responsiva pra um tamanho de monitor específico */
+
+@media screen and (max-width:1600px) {
+    .cabecalho-logo {
+        position: initial;
+        transform: none;
+    }
+
+    .cabecalho-box {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .conteudo {
+        gap: 20%;
+    }
+
+    .filme-capa-imagem img {
+        width: 430px;
+    }
+
+    .filme-resumo p {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .cabecalho-letreiro {
+        font-size: 28px;
+        width: 850px;
+    }
+
+    .conteudo {
+        gap: 23%;
+    }
+
+    .filme-resumo p {
+        font-size: 30px;
+    }
+
+    .filme-resumo h2 {
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (max-width: 1070px) {
+    .filme-capa-imagem img {
+        width: 380px;
+    }
+
+    .cabecalho-box {
+        margin-right: 20px;
+    }
+
+    .letras {
+        font-size: 27px;
+        width: 415px;
+    }
+
+    .cabecalho-letreiro {
+        font-size: 25px;
+        width: 730px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .cabecalho-logo {
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .cabecalho-box {
+        width: 100%;
+    }
+
+    .cabecalho-letreiro {
+        position: initial;
+        transform: none;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    nav {
+        padding-top: 30px;
+    }
+
+    .conteudo {
+        gap: 25%;
+    }
+
+    .filme-resumo {
+        width: 100%;
+        margin-right: 50px;
+    }
+
+    .filme-resumo p {
+        font-size: 27px;
+    }
+
+    .filme-resumo h2 {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .conteudo {
+        display: block;
+    }
+
+    .cabecalho-letreiro {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .filme-capa {
+        margin-bottom: 30px;
+    }
+
+    .cabecalho-logo {
+        width: 140px;
+    }
 }

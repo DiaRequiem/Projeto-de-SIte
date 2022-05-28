@@ -6,7 +6,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(../Paginas/fundo.jpg);
-    background-size: auto;
+    background-size: cover;
 }
 
 .tela-login h1 {

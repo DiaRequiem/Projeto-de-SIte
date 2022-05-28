@@ -5,14 +5,15 @@
 * {
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    /* Box-Sizing é pra respeitar a largura do monitor 👍 */
 }
 
 body {
     /* padding-left: ;
     padding-right: ;
     padding-top: ; */
-    background-color: #9b8a46fd;
+    background: linear-gradient(30.15deg,   rgb(87, 86, 86) 26.62%, #f1c40f 75.61%);
     transition: 1s;
     /* O transition serve pra caso aja alguma mudança nos valores do body, ele da uma "duração" a mudança de valor, pra dar um efeito mais leve */
 
@@ -50,26 +51,38 @@ nav {
 
 .cabecalho {
     display: flex;
+    position: relative;
     justify-content: center;
     background-color: #111;
-    padding-top: 40px;
+    height: 200px;
 }
 
 .cabecalho-logo {
-    height: 200px;
     width: 200px;
-    padding-right: 1350px;
-    padding-bottom: 10px;
+    position: absolute;
+        /* Position absolute pra fazer outros elementos dentro da div ignorarem a colisão com a imagem */
+    left: 50px;
+    top: 60%;
+    transform: translateY(-50%);
+        /* Movimenta algo usando o sistema cartesiano refente ao eixo X e Y dentro da div */
 }
 
-.cabecalho h1 {
+.cabecalho-letreiro {
     padding: 10px;
-    margin: 60px;
     text-align: center;
-    position: absolute;
     background-color: #f1c40f;
     border-radius: 20px;
     font-family: 'Oleo Script', cursive;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.cabecalho-box {
+    position: relative;
+    width: 1000px;
 }
 
 nav  {
