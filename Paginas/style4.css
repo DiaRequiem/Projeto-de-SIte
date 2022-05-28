@@ -258,6 +258,7 @@ table td {
 @media screen and (max-width: 480px) {
     .cabecalho-letreiro {
         width: 80%;
+        font-size: 15px;
     }
 
     .menu a li {
@@ -279,7 +280,7 @@ table td {
 
 
     .rodape p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
 }
