@@ -1,27 +1,35 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../Paginas/fundo.jpg);
+    background: url(../Paginas/fundo.jpg) no-repeat center center fixed;
+    /* Ao colocar os comandos do lado da URL, eu já coloco tudo de uma vez, o no-repeat é pra não ficar duplicando a imagem, o primeiro center é o eixo X, o segundo é o Y e o fixed é pra imagem não sair do lugar. */
     background-size: cover;
+    /* -webkit, -moz, -o, são comandos pra funcionar em um navegador específico, certos navegadores não tem suporte pra alguns comandos. */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .tela-login h1 {
-    margin-bottom: 7px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .tela-login {
     background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
     padding: 70px;
+    margin: 0 auto;
     border-radius: 15px;
-    color: white
+    color: white;
+    width: 100%;
+    max-width: 550px;
 }
 
 input {
@@ -38,18 +46,43 @@ input {
     border-radius: 15px;
     padding: 10px;
     width: 100%;
-    font-size: 17px;
+    font-size: 25px;
     color: black;
+    text-align: center;
+    cursor: pointer;
 }
 
 .botao:hover {
     background: rgba(200, 146, 15, 1.0);
-    cursor: pointer;
 }
 
 .logo {
-    float: left;
-    margin-top: 330px;
-    margin-left: 150px;
-    width: 350px;
+    position: absolute;
+    width: 500px;
+}
+
+.conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+@media screen and (max-width: 1670px) {
+    .logo {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo {
+        width: 75%;
+    }
+
+    .tela-login {
+        width: calc(100% - 20px);
+    }
 }
