@@ -280,12 +280,6 @@ table td {
 
 }
 
-@media screen and (max-width: 450px) {
-    .menu a li {
-        display: block;
-        text-align: center;
-    }
-}
 @media screen and (max-width: 320px) {
     .tabela-filme table th {
         font-size: 13px;

@@ -374,6 +374,13 @@ nav {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .menu a {
+        display: block;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .cabecalho-letreiro {
         font-size: 15px;
@@ -395,18 +402,9 @@ nav {
     .filme-resumo p {
         font-size: 25px
     }
-
-    .menu a li {
-        display: block;
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 400px) {
-    .menu a li {
-        display: block;
-        text-align: center;
-    }
 
     .filme-capa-imagem img {
         width: 100%;
