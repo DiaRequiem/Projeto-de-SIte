@@ -250,7 +250,7 @@ table td {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .cabecalho-letreiro {
         width: 80%;
         font-size: 15px;

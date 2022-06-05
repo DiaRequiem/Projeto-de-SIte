@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(30.15deg, rgb(87, 86, 86) 26.62%, #f1c40f 75.61%);
+    transition: 1s;
+}
+
+.menu a li:hover {
+    background-color: #f1c40f;
+    transition: 0.3s;
+}
+
+.menu a li {
+    display: inline-flex;
+    margin: 10px;
+    border: 2px solid #f1c40f;
+    padding: 12px 19px;
+    border-radius: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Asap';
+}
+
+ul {
+    padding-top: 10px;
+    background-color: #111;
+    padding: 10px;
+}
+
+nav {
+    background-color: #111;
+}
+
+.cabecalho {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: #111;
+    height: 200px;
+}
+
+.cabecalho-logo {
+    width: 200px;
+    position: absolute;
+    /* Position absolute pra fazer outros elementos dentro da div ignorarem a colisão com a imagem */
+    left: 50px;
+    top: 60%;
+    transform: translateY(-50%);
+    /* Movimenta algo usando o sistema cartesiano refente ao eixo X e Y dentro da div */
+}
+
+.cabecalho-letreiro {
+    padding: 10px;
+    text-align: center;
+    background-color: #f1c40f;
+    border-radius: 20px;
+    font-family: 'Oleo Script', 'Arial', Helvetica, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.cabecalho-box {
+    position: relative;
+    width: 1000px;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+}
+
+.conteudo {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.conteudo-titulo {
+    margin: 35px auto;
+    background-color: #111;
+    color: white;
+    width: 20%;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.conteudo-um {
+    width: 50%;
+    background-color: gray;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.conteudo-texto {
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+    font-family: 'Noto Sans';
+}
+
+.conteudo-texto:hover {
+    transform: scale(1.2);
+    color: white;
+    text-shadow: 2px 2px #111;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    width: 300px;
+}
+
+a p {
+    padding: 10px;
+    background-color: #f1c40f;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.rodape {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.rodape-logo {
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+.rodape p {
+    padding: 5px;
+    font-family: 'Zen Loop', cursive, 'Arial', Helvetica;
+}
+
+.rodape div {
+    align-items: center;
+    font-size: 30px;
+}
