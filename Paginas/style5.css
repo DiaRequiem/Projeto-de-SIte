@@ -5,10 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 
+/* Fontes importadas do Google ;) */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -123,20 +129,27 @@ nav {
     text-shadow: 2px 2px #111;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    width: 300px;
+.fonte p {
+    display: flex;
+    margin: 50px auto;
 }
 
-a p {
+.fonte p a {
     padding: 10px;
     background-color: #f1c40f;
     text-align: center;
     font-size: 25px;
     border-radius: 20px;
-    width: 300px;
     margin: 0 auto;
+    width: 180px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.fonte p a:hover {
+    background-color: #f1c40fbd;
+    transform: scale(1.1);
 }
 
 .rodape {

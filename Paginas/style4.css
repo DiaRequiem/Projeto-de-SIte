@@ -13,6 +13,7 @@
 
 ::-webkit-scrollbar {
     display: none;
+    /* Comando feito pra tirar a scrollbar no lado direito */
 }
 
 body {
@@ -137,7 +138,7 @@ table td {
 }
 
 .rodape {
-    background-color: black;
+    background-color: #111;
     color: white;
     text-align: center;
     padding: 30px;

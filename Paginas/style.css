@@ -25,6 +25,10 @@ body {
 
 }
 
+.menu {
+    padding: 10px;
+}
+
 .menu a li:hover {
     background-color: #f1c40f;
     transition: 0.3s;
@@ -43,8 +47,7 @@ body {
     color: white;
     font-size: 30px;
     font-family: 'Asap';
-}
-image.png
+} 
 ul {
     padding-top: 10px;
     background-color: #111;
@@ -117,6 +120,7 @@ nav {
 .conteudo {
     margin: 0 auto;
     width: 75%;
+    /* Display grid é pra deixar os conteudos dividos por colunas, geralmente esse tipo de conteúdo com uma div do lado da outra fica melhor de mexer com grid */
     display: grid;
     grid-gap: 15%;
     gap: 9%;
@@ -161,6 +165,7 @@ nav {
     cursor: pointer;
     box-shadow: 0px 0px 25px black;
     transform: scale(1.1);
+    /* transform: scale é pra mexer na escala da imagem de uma forma mais suave, se usar o Zoom, ele simplesmente da um zoom na imagem e não da pra usar o comando de transition. 1.0 é a resolução normal da imagem, se botar menos, ela diminui, se aumentar, ela fica maior */
 }
 
 .filme-resumo h2 {
@@ -208,7 +213,7 @@ nav {
 }
 
 .rodape {
-    background-color: black;
+    background-color: #111;
     color: white;
     text-align: center;
     padding: 30px;
@@ -351,7 +356,6 @@ nav {
         width: 80%;
     }
 }
-
 @media screen and (max-width: 800px) {
     .filme-capa {
         margin-bottom: 30px;
