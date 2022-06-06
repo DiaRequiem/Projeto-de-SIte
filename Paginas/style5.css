@@ -132,6 +132,7 @@ nav {
 .fonte p {
     display: flex;
     margin: 50px auto;
+    word-break: break-word;
 }
 
 .fonte p a {
@@ -172,4 +173,128 @@ nav {
 .rodape div {
     align-items: center;
     font-size: 30px;
+}
+
+@media screen and (max-width:1600px) {
+    .cabecalho-logo {
+        position: initial;
+        transform: none;
+    }
+
+    .cabecalho-box {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .cabecalho-letreiro {
+        font-size: 28px;
+        width: 850px;
+    }
+
+}
+
+@media screen and (max-width: 1070px) {
+    .cabecalho-box {
+        margin-right: 20px;
+    }
+
+    .cabecalho-letreiro {
+        font-size: 25px;
+        width: 730px;
+    }
+
+    .conteudo-um {
+        color: white;
+        background-color: black;
+        font-size: 16px;
+    }
+
+    .conteudo-titulo {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .cabecalho-logo {
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .cabecalho-box {
+        width: 100%;
+    }
+
+    .cabecalho-letreiro {
+        position: initial;
+        transform: none;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    nav {
+        padding-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .cabecalho-letreiro {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 800px) {
+
+    .cabecalho-logo {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu a li {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .conteudo-um {
+        width: 80%;
+    }
+
+    .conteudo-um p {
+        font-size: 15px;
+    }
+
+    .conteudo-titulo {
+        font-size: 20px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .conteudo-titulo {
+        font-size: 28px;
+        width: 80%;
+    }
+
+    .cabecalho-letreiro {
+        font-size: 15px;
+    }
+
+    .fonte p a {
+        color: black;
+        background-color: #f1c40f;
+        font-size: 25px;
+    }
+    
+    .fonte p a:hover {
+        background-color: #f1c40fbd;
+        transform: scale(1.1);
+    }
 }
